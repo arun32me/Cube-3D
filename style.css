@@ -15,7 +15,8 @@
   perspective: 2000px;
   perspective-origin: 0;
   transform-style: preserve-3d;
-  animation-name: rot;
+  transform: rotatez(45deg) rotateY(45deg) rotateX(45deg);
+  animation-name: rot2;
   animation-duration: 5s;
   animation-fill-mode: both;
   animation-timing-function: linear;
@@ -56,4 +57,9 @@
   35% {transform: rotateX(180deg) rotateY(100deg) rotateZ(145deg);}
   70% {transform: rotateX(250deg) rotateY(270deg) rotateZ(230deg);}
   100% {transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+}
+@keyframes rot2 {
+  0% {transform: rotatez(45deg) rotateY(45deg) rotateX(45deg);}
+  100% {transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+  /* 100% {transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);} */
 }
